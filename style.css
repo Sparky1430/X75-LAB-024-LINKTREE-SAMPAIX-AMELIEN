@@ -43,7 +43,7 @@
    color: #fa07f6;
 }
 
-/* responsive code */
+/* responsive code via media queries */
 @media (max-width: 768px) {
    .menu {
        display: none;
@@ -92,7 +92,9 @@ h2{
    color: #9c328a;
    text-transform: uppercase;
    font-size: 20px;
+   animation: pulsation 2s infinite;
 }
+
 
 .container {
    text-align: center;
@@ -183,6 +185,7 @@ h2{
    width: 60px; 
    height: auto;
    transition: transform 0.5s;
+   /* animation des icons  */ 
    animation: pulsation 2s infinite;
 }
 
