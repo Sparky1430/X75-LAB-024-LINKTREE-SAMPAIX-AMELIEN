@@ -1,3 +1,4 @@
+FR
 # LINKBAUM
 
 ## Description
@@ -31,4 +32,40 @@ Ajoutez ici des captures d'écran des pages ou des sections importantes de votre
 ## Installation
 1. Clonez ce dépôt GitHub :
    ```bash
-   git clone https://github.com/votre-utilisateur/LINKBAUM.git](https://github.com/Sparky1430/X75-LAB-024-LINKTREE-SAMPAIX-AMELIEN)
+   git clone https://github.com/Sparky1430/X75-LAB-024-LINKTREE-SAMPAIX-AMELIEN
+
+
+EN
+# LINKBAUM
+
+## Description
+LINKBAUM is a web platform designed to centralize and easily share important links. Built to be simple and intuitive, it features a homepage with links to social networks and a contact form to facilitate communication.
+
+---
+
+## Features
+- Homepage:
+  - A central interface with buttons redirecting to major social networks and the official website.
+  - Interactive logo linking to a YouTube video.
+
+- Contact Page:
+  - A complete form with fields for name, email, subject, and message.
+  - Submit button with a redirection to the homepage.
+
+- Navigation:
+  - Simple and responsive menu to switch between the homepage, website, and contact form.
+  - Social icons for direct access to Facebook, Instagram, and Twitter accounts.
+
+---
+
+## Preview
+Add screenshots of the main pages or key sections of your project here, such as:
+- Homepage with buttons and logo.
+- Contact page with the form.
+
+---
+
+## Installation
+1. Clone this GitHub repository:
+   ```bash
+   git clone https://github.com/Sparky1430/X75-LAB-024-LINKTREE-SAMPAIX-AMELIEN
