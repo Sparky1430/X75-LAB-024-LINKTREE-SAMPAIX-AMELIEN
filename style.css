@@ -8,11 +8,13 @@
    position: fixed;
    top: 0;
    border-radius: 8px;
-   width: 300px; 
+   width: auto;
+   width-max: 300px; 
    margin: 0 auto; 
    left: 0;
    right: 0;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+   margin-top: -5px;
+    
 }
 
 
@@ -48,34 +50,9 @@
    color: #fa07f6;
 }
 
-/* responsive code via media queries */
-@media (max-width: 768px) {
-   .menu {
-       display: none;
-       flex-direction: column;
-       background-color: #9c328a;
-       top: 60px;
-       left: 0;
-       width: 100%;
-       padding: 10px 0;
-   }
 
-   .menu-icon {
-       display: block;
-   }
 
-   #menu-toggle:checked + .menu-icon + .menu {
-       display: flex;
-       
-   }
-
-   .menu li {
-       text-align: center;
-       padding: 10px 0;
-   }
-}
-
- .img_web{
+.img_web{
     width: 80PX;
     height: auto;
     background-size: auto;
