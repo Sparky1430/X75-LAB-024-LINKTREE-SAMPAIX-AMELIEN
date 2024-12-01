@@ -2,14 +2,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #9c328a ;
+   background-color: #9c328a;
    padding: 10px 20px;
    color: #fff;
    position: fixed;
    top: 0;
    border-radius: 8px;
-
+   width: 300px; 
+   margin: 0 auto; 
+   left: 0;
+   right: 0;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
+
 
 
 
