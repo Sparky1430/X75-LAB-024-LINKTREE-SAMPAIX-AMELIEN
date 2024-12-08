@@ -1,0 +1,227 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Corps général */
+body {
+   font-family: 'Arial', sans-serif;
+   background-image: url(image/Pulmo.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   color: #333;
+   line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #9c328a;
+   padding: 10px 20px;
+   color: white;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+   font-size: 28px;
+   cursor: pointer;
+   display: block;
+   color: white;
+}
+
+#menu-toggle {
+   display: none;
+}
+
+.menu {
+   display: none;
+   list-style: none;
+   flex-direction: column;
+   background-color: #9c328a;
+   width: 100%;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   padding: 10px 0;
+   gap: 10px;
+}
+
+.menu li {
+   text-align: center;
+}
+
+.menu li a {
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+   transition: color 0.3s ease;
+   padding: 10px 0;
+   display: block;
+}
+
+.menu li a:hover {
+   color: #fa07f6;
+}
+
+/* Affiche le menu lorsque le toggle est activé */
+#menu-toggle:checked + .menu-icon + .menu {
+   display: flex;
+}
+
+/* Container principal */
+.container {
+   margin: 100px auto 20px;
+   background: rgba(255, 255, 255, 0.8);
+   padding: 20px;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   max-width: 90%;
+}
+
+/* Avatar */
+.avatar img {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   margin-bottom: 15px;
+   transition: transform 0.3s;
+}
+
+.avatar img:hover {
+   transform: scale(1.1);
+}
+
+/* Nom utilisateur */
+.username {
+   font-size: 28px;
+   margin-bottom: 15px;
+   color: #333;
+}
+
+/* Liens */
+.links {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.link-btn {
+   text-decoration: none;
+   color: white;
+   background-color: #9c328a;
+   padding: 12px;
+   border-radius: 8px;
+   font-size: 18px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   text-align: center;
+}
+
+.link-btn:hover {
+   background-color: #41b9af;
+   transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 20px 0;
+   text-align: center;
+}
+
+.footer-content h2 {
+   font-size: 18px;
+   color: #333;
+}
+
+.social-icons {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin-top: 10px;
+}
+
+.social-logo {
+   width: 40px;
+   height: auto;
+   transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+   transform: scale(1.2);
+}
+
+/* MEDIA QUERIES */
+/* Pour les tablettes */
+@media (min-width: 768px) {
+   .menu {
+       display: flex;
+       flex-direction: row;
+       position: static;
+       background-color: transparent;
+       gap: 20px;
+       padding: 0;
+   }
+
+   .menu li {
+       text-align: left;
+   }
+
+   .menu-icon {
+       display: none;
+   }
+
+   #menu-toggle:checked + .menu-icon + .menu {
+       display: flex;
+   }
+
+   .container {
+       max-width: 600px;
+   }
+
+   .avatar img {
+       width: 100px;
+       height: 100px;
+   }
+
+   .username {
+       font-size: 32px;
+   }
+}
+
+/* Pour les ordinateurs de bureau */
+@media (min-width: 1024px) {
+   .navbar {
+       padding: 10px 40px;
+   }
+
+   .menu li a {
+       font-size: 20px;
+   }
+
+   .container {
+       max-width: 800px;
+   }
+
+   .username {
+       font-size: 36px;
+   }
+
+   .link-btn {
+       font-size: 20px;
+       padding: 14px;
+   }
+
+   .footer-content h2 {
+       font-size: 20px;
+   }
+}
